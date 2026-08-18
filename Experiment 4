@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+class MyClass 
+{
+public:
+    void displayMessage();
+};
+
+void MyClass::displayMessage() 
+{
+    cout << "Member function defined outside the class using scope resolution operator." << endl;
+}
+
+int main() 
+{
+    MyClass obj;
+
+    obj.displayMessage();
+
+    return 0;
+}
