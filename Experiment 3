@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+class CastingDemo 
+{
+public:
+    void showImplicit() 
+    {
+        int numInt = 15;
+        double numDouble;
+
+        numDouble = numInt;
+
+        cout << "Implicit Casting (int to double): " << numDouble << endl;
+    }
+
+    void showExplicit() 
+    {
+        double numDouble = 25.75;
+        int numInt;
+
+        numInt = (int)numDouble;
+
+        cout << "Explicit Casting (double to int): " << numInt << endl;
+    }
+};
+
+int main() 
+{
+    CastingDemo demo;
+
+    demo.showImplicit();
+    demo.showExplicit();
+
+    return 0;
+}
